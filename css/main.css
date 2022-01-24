@@ -1226,6 +1226,7 @@
 }
 
 .modal {
+  max-width: 450px;
   background-color: white;
   position: absolute;
   top: 50%;
