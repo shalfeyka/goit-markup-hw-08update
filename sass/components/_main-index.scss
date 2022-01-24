@@ -82,7 +82,7 @@
   text-align: center;
   color: $title-color;
   margin-bottom: 30px;
-
+  
   @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.61;
@@ -208,7 +208,7 @@
 .section--no--padding__top {
   padding-top: 0;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
