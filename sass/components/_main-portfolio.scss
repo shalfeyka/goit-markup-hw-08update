@@ -23,7 +23,7 @@
     }
 }
 .filter__item {
-
+  
     @media screen and (max-width: 767px) {
         margin-right: 8px;
         margin-bottom: 15px;
@@ -83,7 +83,8 @@
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
         margin-right: 30px;
-        
+        display: flex;
+        flex-grow: 1;
       }
       @media screen and (min-width: 1200px) {
         width: 370px;
