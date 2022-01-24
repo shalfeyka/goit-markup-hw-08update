@@ -792,6 +792,9 @@
 
 .gallery__link {
   display: block;
+  border: 1px solid #EEEEEE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .gallery__link:hover, .gallery__link:focus {
@@ -803,9 +806,6 @@
   position: relative;
   overflow: hidden;
   padding: 20px 24px;
-  border-left: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
 }
 
 .gallery__overlay {
