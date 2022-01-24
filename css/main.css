@@ -698,14 +698,6 @@
   }
 }
 
-.filter__item {
-  /* align-items: center;
-    margin-right: 8px;
-    &:last-child {
-        margin-right: 0;
-    }*/
-}
-
 @media screen and (max-width: 767px) {
   .filter__item {
     margin-right: 8px;
