@@ -120,7 +120,12 @@
 .gallery__thumb {
     position: relative;
     overflow: hidden;
-    padding: 20px 24px; 
+
+}
+.gallery__card {
+  padding: 20px 24px;
+  border: 1px solid #ececec;
+
 }
 .gallery__overlay {
     position: absolute;
