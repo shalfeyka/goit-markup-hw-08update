@@ -1387,6 +1387,12 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .feedback__comment-area {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .feedback__comment-area {
     width: 448px;
