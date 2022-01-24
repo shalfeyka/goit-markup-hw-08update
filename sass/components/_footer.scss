@@ -93,10 +93,7 @@
 }
 .network__list {
   display: flex;
-
-  @media screen and (max-width: 767px) {
-    margin-left: 123px;
-  }
+  justify-content: center;
 }
 .network__item {
   margin-right: 10px;
