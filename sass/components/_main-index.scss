@@ -81,7 +81,7 @@
   text-align: center;
   color: $title-color;
   margin-bottom: 30px;
-  
+
   @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.61;
@@ -230,9 +230,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-  
   }
- 
 }
 .work-list {
   list-style-type: none;
@@ -291,7 +289,6 @@
   background-color: $background-team;
 }
 .team {
- 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -301,20 +298,22 @@
   }
 }
 .team__item {
-  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $title-color;
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   @media screen and (max-width: 480px) {
     flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 120px) / 2);
+    margin-right: 10px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
@@ -324,7 +323,6 @@
 .team-container {
   padding-top: 30px;
   padding-bottom: 30px;
-  
 }
 .team__title {
   color: $color-text;
@@ -354,7 +352,6 @@
   &:last-child {
     margin-right: 0;
   }
- 
 }
 
 .social-network__link {
@@ -372,7 +369,6 @@
     background-color: $hover-collor-text;
     color: $title-color;
   }
-
 }
 .social-network__icon {
   fill: currentColor;
