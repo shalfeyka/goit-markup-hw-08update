@@ -96,7 +96,7 @@
     height: 4px;
     background-color: #2196f3;
     border-radius: 2px;
-    bottom: 1px;
+    bottom: 16px;
   }
 }
 
@@ -165,8 +165,6 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -177,7 +175,6 @@
 
 @media screen and (min-width: 768px) {
   .contacts-list__link {
-    padding: 10px 0;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -210,9 +207,17 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-list__item {
+    margin-bottom: 10px;
+  }
+  .contacts-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .overlay {
   max-width: auto;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -301,7 +306,7 @@
 
 @media screen and (min-width: 1200px) {
   .main-section__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -427,6 +432,7 @@
 @media screen and (max-width: 767px) {
   .advantages__title {
     text-align: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -445,7 +451,7 @@
   padding-top: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section--no--padding__top {
     display: none;
   }
@@ -453,8 +459,7 @@
 
 .section__title {
   color: #212121;
-  font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -471,6 +476,9 @@
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -491,6 +499,10 @@
 .work-list__item {
   margin-right: 30px;
   position: relative;
+}
+
+.work-list__item:last-child {
+  margin-right: 0;
 }
 
 .work-list__text {
@@ -534,10 +546,6 @@
   background-color: #F5F4FA;
 }
 
-.team {
-  margin: -15px;
-}
-
 @media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
@@ -562,7 +570,10 @@
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #FFFFFF;
-  margin: 15px;
+}
+
+.team__item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -671,8 +682,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*justify-content: center;
-    margin-bottom: 50px;*/
 }
 
 @media screen and (max-width: 767px) {
@@ -706,7 +715,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .filter__item:not(:last-child) {
+  .filter__item {
     margin-right: 8px;
   }
 }
@@ -783,9 +792,16 @@
 
 .gallery__link {
   display: block;
-  border: 1px solid #EEEEEE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .gallery__link:hover, .gallery__link:focus {
@@ -801,6 +817,9 @@
 .gallery__card {
   padding: 20px 24px;
   border: 1px solid #ececec;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .gallery__overlay {
@@ -873,6 +892,19 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-container {
     text-align: center;
@@ -890,12 +922,6 @@
 @media screen and (max-width: 767px) {
   .footer-adress {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-adress {
-    margin-right: 165px;
   }
 }
 
@@ -1496,16 +1522,8 @@
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-right: 93px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .logo {
-    margin-right: auto;
-    margin-left: auto;
     display: block;
   }
 }
@@ -1517,6 +1535,13 @@
   font-size: 26px;
   line-height: 1.14;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .logo__dark {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .logo__half {

@@ -1,6 +1,5 @@
 .overlay {
   max-width: auto;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -94,7 +93,7 @@
     text-transform: uppercase;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -191,6 +190,7 @@
 
   @media screen and (max-width: 767px) {
     text-align: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -208,15 +208,14 @@
 .section--no--padding__top {
   padding-top: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
 .section__title {
   color: $color-text;
-  font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -228,6 +227,10 @@
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+  
   }
  
 }
@@ -243,6 +246,10 @@
 .work-list__item {
   margin-right: 30px;
   position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .work-list__text {
   align-items: center;
@@ -284,7 +291,7 @@
   background-color: $background-team;
 }
 .team {
-  margin: -15px;
+ 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -299,7 +306,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $title-color;
-  margin: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media screen and (max-width: 480px) {
     flex-basis: calc((100% - 30px) / 2);
@@ -315,6 +324,7 @@
 .team-container {
   padding-top: 30px;
   padding-bottom: 30px;
+  
 }
 .team__title {
   color: $color-text;
@@ -344,6 +354,7 @@
   &:last-child {
     margin-right: 0;
   }
+ 
 }
 
 .social-network__link {
@@ -361,6 +372,7 @@
     background-color: $hover-collor-text;
     color: $title-color;
   }
+
 }
 .social-network__icon {
   fill: currentColor;

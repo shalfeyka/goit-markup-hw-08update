@@ -71,7 +71,7 @@
     height: 4px;
     background-color: $hover-collor-text;
     border-radius: 2px;
-    bottom: 1px;
+    bottom: 16px;
   }
 }
 
@@ -125,8 +125,6 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms $timing-function;
 
   &:hover,
@@ -134,7 +132,6 @@
     color: $hover-collor-text;
   }
   @media screen and (min-width: 768px) {
-    padding: 10px 0;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -155,5 +152,11 @@
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
   }
 }

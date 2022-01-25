@@ -10,8 +10,6 @@
 }
 .filter {
     display: flex;
-    /*justify-content: center;
-    margin-bottom: 50px;*/
 
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
@@ -35,9 +33,7 @@
         }
       }
       @media screen and (min-width: 768px) {
-        &:not(:last-child) {
-          margin-right: 8px; 
-      }
+          margin-right: 8px;  
 }
 }
 .filter__button { 
@@ -94,8 +90,10 @@
 }
 .gallery__link {
     display: block;
-    border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     &:hover, 
     &:focus {
@@ -110,6 +108,7 @@
 .gallery__card {
   padding: 20px 24px;
   border: 1px solid #ececec;
+  flex-grow: 1;
 
 }
 .gallery__overlay {
