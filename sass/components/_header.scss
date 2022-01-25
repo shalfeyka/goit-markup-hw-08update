@@ -73,6 +73,16 @@
     border-radius: 2px;
     bottom: 16px;
   }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 4px;
+    background-color: $hover-collor-text;
+    border-radius: 2px;
+    bottom: -5px;
+  }
 }
 
 .contacts-list__icon {
