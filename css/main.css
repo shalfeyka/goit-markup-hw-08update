@@ -1224,6 +1224,12 @@
   pointer-events: none;
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 15px 15px;
+  }
+}
+
 .section__title-client {
   color: #212121;
   font-weight: 700;
@@ -1301,6 +1307,12 @@
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   padding: 40px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  top: 50%;
+  left: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1315,30 +1327,15 @@
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    min-height: 581px;
     min-width: 528px;
-    min-height: 581px;
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
   }
 }
 
@@ -1369,6 +1366,13 @@
 
 .modal__button-close:hover, .modal__button-close:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .modal__button-close {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .modal__title {

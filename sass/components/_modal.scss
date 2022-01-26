@@ -4,28 +4,23 @@
   transition-timing-function: $timing-function;
   transition-duration: 250ms;
   padding: 40px;
+  transition-property: transform;
+  top: 50%;
+  left: 50%;
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    transition-property: transform;
+  transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    min-height: 581px;
     min-width: 528px;
-    min-height: 581px;
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    transition-property: transform;
+   transform: translate(-50%, -50%);
   }
 }
 .modal__button-close {
@@ -49,6 +44,11 @@
   &:focus {
     color: $hover-collor-text;
   }
+  @media screen and (max-width: 767px) {
+    top: 20px;
+    right: 20px;
+  }
+
 }
 
 .modal__title {
