@@ -1296,10 +1296,6 @@
 .modal {
   max-width: 450px;
   background-color: white;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: -webkit-transform;
@@ -1314,7 +1310,6 @@
 @media screen and (max-width: 767px) {
   .modal {
     width: 100%;
-    position: absolute;
   }
 }
 
@@ -1322,6 +1317,10 @@
   .modal {
     width: 450px;
     position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -1332,6 +1331,10 @@
     min-width: 528px;
     min-height: 581px;
     position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -1356,7 +1359,6 @@
           align-items: center;
   cursor: pointer;
   padding: 0 0;
-  position: absolute;
   fill: currentColor;
   background-color: #FFFFFF;
 }
