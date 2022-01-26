@@ -1,7 +1,6 @@
 .modal {
   max-width: 450px;
   background-color: white;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -12,15 +11,18 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    position: absolute;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
+    position: absolute;
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
     min-height: 581px;
     min-width: 528px;
     min-height: 581px;
+    position: absolute;
   }
 }
 .modal__button-close {

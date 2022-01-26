@@ -71,7 +71,7 @@
     height: 4px;
     background-color: $hover-collor-text;
     border-radius: 2px;
-    bottom: 16px;
+    bottom: -3px;
   }
   @media screen and (min-width: 1200px) {
     display: block;
@@ -81,7 +81,7 @@
     height: 4px;
     background-color: $hover-collor-text;
     border-radius: 2px;
-    bottom: -5px;
+    bottom: -1px;
   }
 }
 
@@ -163,10 +163,13 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
       &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 21px;
+      }
+      &:first-child {
+        margin-top: 21px;
       }
   }
 }
